@@ -1,15 +1,13 @@
 "use client";
-import React, { useEffect } from "react";
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
+import MessengerChat from "@/components/MessegeChat";
+import { useEffect } from "react";
+import AgentDemo from "../components/AgentDemo";
 import Benefits from "../components/Benefits";
-import Stats from "../components/Stats";
 import CaseStudies from "../components/CaseStudies";
 import Features from "../components/Features";
+import Hero from "../components/Hero";
 import Pricing from "../components/Pricing";
-import Footer from "../components/Footer";
-import MessengerChat from "@/components/MessegeChat";
-import AgentDemo from "../components/AgentDemo";
+import Stats from "../components/Stats";
 
 const Index = () => {
   useEffect(() => {
@@ -39,7 +37,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-navy-900 text-white">
-      <Navbar />
       <Hero />
       <Benefits />
       <Stats />
@@ -47,7 +44,6 @@ const Index = () => {
       <CaseStudies />
       <Features />
       <Pricing />
-      <Footer />
       <MessengerChat />
     </div>
   );
