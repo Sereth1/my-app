@@ -1,5 +1,7 @@
 "use client";
+
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
@@ -39,6 +41,12 @@ const Navbar = () => {
               {item}
             </a>
           ))}
+          <Link
+            href="/blog"
+            className="text-white/80 hover:text-aqua-500 transition-colors duration-300 animated-underline"
+          >
+            Blog
+          </Link>
           <a href="#contact" className="btn-primary">
             Get Started
           </a>
@@ -70,6 +78,13 @@ const Navbar = () => {
               {item}
             </a>
           ))}
+          <Link
+            href="/blog"
+            className="text-xl text-white/80 hover:text-aqua-500 transition-colors duration-300"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Blog
+          </Link>
           <a
             href="#contact"
             className="btn-primary mt-4"
